@@ -70,7 +70,7 @@ ZSH_THEME="kennethreitz"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages tmux colorize)
 
 source $ZSH/oh-my-zsh.sh
 
