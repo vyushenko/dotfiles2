@@ -23,3 +23,10 @@ To install run files in the order of:
 ./macos
 ./bootstrap
 ```
+
+## Special Commands
+
+* ccat - colorized cat
+* cless - colorized less
+* ta - tmux attach -t
+* tl - tmux list-sessions
