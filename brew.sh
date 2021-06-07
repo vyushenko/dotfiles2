@@ -11,6 +11,7 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+brew install node
 brew install tmux
 brew install pygments
 
@@ -42,7 +43,7 @@ brew install wget #--with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
