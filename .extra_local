@@ -3,3 +3,4 @@
 source ~/.extra_local_d
 
 alias personal='ssh-add ~/.ssh/id_ed25519_personal | source ~/.extra_local_p | cd ~/src/personal'
+alias java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.301.09`'
