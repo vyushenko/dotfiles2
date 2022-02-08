@@ -30,3 +30,39 @@ To install run files in the order of:
 * cless - colorized less
 * ta - tmux attach -t
 * tl - tmux list-sessions
+
+
+### Support for multiple github accounts
+
+[From](https://dev.to/sammm/setting-up-multiple-github-accounts-on-the-same-computer-without-having-to-change-the-repo-url-1007)
+
+Add following to `~/.ssh/config`
+
+```sh
+  Host github.com
+    HostName github.com
+    User git
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    UseKeychain yes
+
+  Match Host github.com !exec "pwd | grep '/COMPANY' > /dev/null"
+    IdentityFile ~/.ssh/id_rsa
+
+  Match Host github.com exec "pwd | grep '/COMPANY' > /dev/null"
+    IdentityFile ~/.ssh/id_rsa_$COMPANY
+```
+
+Add following to `~/.gitconfig`
+
+```sh
+# ~/.gitconfig
+[user]
+email = your.email@example.com
+name = your-user-name
+[user]
+email = your.email@example.com
+name = your-user-name
+[includeIf "gitdir:~/PATH/TO/WORK/DIR/RELATIVE/TO/ROOT"]
+    path = ~/PATH/TO/WORK/DIR/RELATIVE/TO/ROOT/.gitconfig
+```
