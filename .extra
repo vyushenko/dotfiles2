@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # includes dotfiles in tab-completion
 shopt -s dotglob
 
