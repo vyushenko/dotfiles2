@@ -99,3 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/vyushenko/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vyushenko/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+# if [ -f '/Users/vyushenko/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/vyushenko/tools/google-cloud-sdk/completion.zsh.inc'; fi
+
+# The next line enables shell command completion for kubectl.
+# [[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
