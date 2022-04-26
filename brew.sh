@@ -11,9 +11,10 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
-brew install node
+# brew install node - use nvm instead
 brew install tmux
 brew install pygments
+brew install yarn
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -47,8 +48,8 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install php
-brew install gmp
+# brew install php
+# brew install gmp
 
 # Install font tools.
 #brew tap bramstein/webfonttools
@@ -60,7 +61,7 @@ brew install gmp
 # WiFi Security
 #brew install aircrack-ng
 # Remove large files from git commits
-brew install bfg
+# brew install bfg
 #brew install binutils
 # Analyzing formware
 #brew install binwalk
@@ -71,7 +72,7 @@ brew install bfg
 # Password cracker
 #brew install fcrackzip
 # Recover deleted files
-brew install foremost
+# brew install foremost
 # Tool to break hasing of passwords
 #brew install hashpump
 # Pentration testing
@@ -110,7 +111,7 @@ brew install ack
 #brew install exiv2
 brew install git
 # Allows storing large files in git where omly pointer is stored and file is in github.com
-brew install git-lfs
+# brew install git-lfs
 # PostScript viewer - data
 #brew install gs
 #brew install imagemagick --with-webp

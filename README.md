@@ -53,6 +53,8 @@ Add following to `~/.ssh/config`
     IdentityFile ~/.ssh/id_rsa_$COMPANY
 ```
 
+And run `ssh-add ~/.ssh/id_rsa_$COMPANY` before use
+
 Add following to `~/.gitconfig`
 
 ```sh

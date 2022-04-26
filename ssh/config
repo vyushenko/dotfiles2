@@ -1,0 +1,9 @@
+Host github.com
+  AddKeysToAgent yes
+  HostName github.com
+
+  Match Host github.com !exec "pwd | grep '/plentina' > /dev/null"
+    IdentityFile ~/.ssh/id_ed25519
+
+  Match Host github.com exec "pwd | grep '/plentina' > /dev/null"
+    IdentityFile ~/.ssh/id_ed25519_plentina
