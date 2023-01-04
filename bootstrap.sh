@@ -12,6 +12,8 @@ function doIt() {
 		--exclude "bootstrap.sh" \
 		--exclude "brew.sh" \
 		--exclude "README.md" \
+		--exclude "ssh" \
+		--exclude "init.sh" \
 		-avh --no-perms . ~;
 	source ~/.zshrc;
 }

@@ -70,7 +70,7 @@ ZSH_THEME="kennethreitz"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages tmux colorize)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages tmux colorize zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +108,10 @@ if [ -f '/Users/vyushenko/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 # The next line enables shell command completion for kubectl.
 [[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+source "/Users/vyushenko/.sdkman/bin/sdkman-init.sh"
+
+eval "$(pyenv init --path)"
