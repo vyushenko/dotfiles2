@@ -1,6 +1,19 @@
 # Opinionated set of dotfiles
 
-THis set of files is to be used with zsh and [Oh My Zsh](https://ohmyz.sh/) framework
+Uses zsh and [Oh My Zsh](https://ohmyz.sh/) framework
+
+
+## Installation
+
+Start by installing
+ - XCode
+ - iTerm2
+ - [Oh My Zsh](https://ohmyz.sh/)
+ - [SDKMan](https://sdkman.io/install)
+ - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+ Then clone this repo and run: `init.sh`, `brew.sh`, `bootstrap.sh`. Relaunch terminal window.
+
 
 ## Zsh configuration files
 

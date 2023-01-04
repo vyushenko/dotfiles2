@@ -13,8 +13,8 @@ BREW_PREFIX=$(brew --prefix)
 
 # brew install node - use nvm instead
 brew install tmux
-brew install pygments
-brew install yarn
+# brew install pygments
+# brew install yarn
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -135,5 +135,8 @@ brew install vbindiff
 
 
 brew install brotli
+
+brew install pyenv
+brew install jenv
 # Remove outdated versions from the cellar.
 brew cleanup
