@@ -113,6 +113,6 @@ if [ -f '/Users/vyushenko/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-source "/Users/vyushenko/.sdkman/bin/sdkman-init.sh"
+# source "/Users/vyushenko/.sdkman/bin/sdkman-init.sh"
 
 eval "$(pyenv init --path)"

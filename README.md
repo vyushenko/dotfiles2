@@ -9,11 +9,32 @@ Start by installing
  - XCode
  - iTerm2
  - [Oh My Zsh](https://ohmyz.sh/)
- - [SDKMan](https://sdkman.io/install)
+ - [SDKMan](https://sdkman.io/install) - not really used
  - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+ - [brew](https://brew.sh/) and run commands that are printed at the end of install scripts
 
  Then clone this repo and run: `init.sh`, `brew.sh`, `bootstrap.sh`. Relaunch terminal window.
 
+### Java Installation
+
+> from https://stackoverflow.com/questions/66579113/how-to-change-java-version-in-mac-os
+
+Verify that jenv installed correctly `jenv doctor`
+Manually install required JDKs
+Check which versions are already installed `/usr/libexec/java_home -V`
+Add each version to jenv, example `jenv add /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home`
+Check which version are avialable `jenv versions`
+Set global version `jenv global 1.7`
+Enable plugin to set JAVA_HOME
+```sh
+ # ensure that JAVA_HOME is correct
+  jenv enable-plugin 
+
+  jenv enable-plugin maven
+  jenv enable-plugin gradle
+```
+
+Open new command prompt and chekc that righ version of java is installed
 
 ## Zsh configuration files
 
